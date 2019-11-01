@@ -1,4 +1,4 @@
-var Letters = function(key){
+let Letter = function(key){
     this.key = key;
     this.guessed = false;
     this.toString = function(){
@@ -17,4 +17,4 @@ var Letters = function(key){
     };
 };
 
-module.exports = Letters;
+module.exports = Letter;

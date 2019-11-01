@@ -1,6 +1,6 @@
-var Letters = require("./Letter.js");
+let Letters = require("./letter.js");
 
-var Word = function(word){
+let Word = function(word){
     this.letters = [];
     for (i in word){
         this.letters.push(new Letters(word[i]))
