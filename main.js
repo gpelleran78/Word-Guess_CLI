@@ -1,7 +1,7 @@
-let inquirer = require("inquirer");
-let Word = require("./Word.js");
-let chalk = require("chalk");
-let figlet = require("figlet");
+const inquirer = require("inquirer");
+const Word = require("./Word.js");
+const chalk = require("chalk");
+const figlet = require("figlet");
 
 let words = ["Jazz", "Rock", "Country", "Metal", "Classic", "Pop", "Rap", "Blues", "HipHop", "Disco", "Funk", "Techno"]
 
@@ -63,7 +63,7 @@ function confirmStart() {
             return;
         }
     })
-}
+};
 
 function startGame() {
     newWord();
@@ -89,7 +89,7 @@ function checked() {
     if (test === true) {
         wordGuessed = true;
     }
-}
+};
 
 function reset() {
     inquirer.prompt([
@@ -109,7 +109,7 @@ function reset() {
             console.log(chalk.magenta("See you next time!"));
         }
     })
-}
+};
 
 let query = function () {
     checked();
@@ -147,4 +147,4 @@ let query = function () {
         console.log(chalk.cyan("You got it right!\n"));
         reset();
     }
-}
+};
